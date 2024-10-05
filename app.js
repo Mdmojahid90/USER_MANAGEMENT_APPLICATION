@@ -11,7 +11,7 @@ const corsOption= {
   Credential:true
 }
 
-app.use(cors(corsOption))
+app.use(cors())
 app.use(express.json())
 
 const adminRouter = require("./routers/admin-router")
